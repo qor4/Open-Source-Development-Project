@@ -7,15 +7,15 @@ import java.lang.String;
 public class Chapter8 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÀüÃ¼ °æ·Î¸íÀÌ ¾Æ´Ñ ÆÄÀÏ ÀÌ¸§¸¸ ÀÔ·ÂÇÏ´Â °æ¿ì, ÆÄÀÏÀº ÇÁ·ÎÁ§Æ® Æú´õ¿¡ ÀÖ¾î¾ß ÇÕ´Ï´Ù.");
-		String file_name, search_name, stop;
-		System.out.print("´ë»ó ÆÄÀÏ¸í ÀÔ·Â>>");
+		System.out.println("ì „ì²´ ê²½ë¡œëª…ì´ ì•„ë‹Œ íŒŒì¼ ì´ë¦„ë§Œ ì…ë ¥í•˜ëŠ” ê²½ìš°, íŒŒì¼ì€ í”„ë¡œì íŠ¸ í´ë”ì— ìˆì–´ì•¼ í•©ë‹ˆë‹¤.");
+		String file_name, search_name;
+		System.out.print("ëŒ€ìƒ íŒŒì¼ëª… ì…ë ¥>>");
 		file_name = sc.nextLine();
 		File fin = new File(file_name);
 		while(true) {
-			System.out.print("°Ë»öÇÒ ´Ü¾î³ª ¹®Àå>>");
+			System.out.print("ê²€ìƒ‰í•  ë‹¨ì–´ë‚˜ ë¬¸ì¥>>");
 			search_name = sc.nextLine();
-			if(search_name.equals("±×¸¸")) {
+			if(search_name.equals("ê·¸ë§Œ")) {
 				break;
 			}
 			int c = 0;
@@ -35,6 +35,6 @@ public class Chapter8 {
 				e.printStackTrace();
 			}
 		}
-		System.out.print("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+		System.out.print("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 	}
 }
